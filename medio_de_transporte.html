@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ejercicio 1 JS</title>
+</head>
+
+<body>
+  <script>
+
+    let distancia = parseFloat(prompt('Ingrese la distancia a recorrer:'));
+
+    if (distancia <= 1000) {
+      document.write(`Puedes ir caminando!`)
+    }
+
+    if (distancia > 1000 && distancia <= 10000) {
+      document.write(`Te recomiendo ir en bicicleta!`)
+    }
+
+    if (distancia > 10000 && distancia <= 30000) {
+      document.write(`Deberias usar el transporte publico ...`)
+    }
+
+    if (distancia > 30000 && distancia <= 100000) {
+      document.write(`Ups! deberas ir en auto`)
+    }
+
+    if (distancia > 100000) {
+      document.write(`Prepara las valijas y sigue un pasaje de avion!`)
+    }
+
+
+  </script>
+</body>
+
+</html>

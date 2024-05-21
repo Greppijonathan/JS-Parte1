@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayor Valor</title>
+</head>
+
+<body>
+  <script>
+    let arreglo = [];
+    let mayor = 0;
+
+    for (let i = 0; i < 3; i++) {
+      const inputValue = parseFloat(prompt(`Ingrese un número ${i + 1}:`));
+      arreglo.push(inputValue);
+    }
+
+    for (let i = 1; i < arreglo.length; i++) {
+      if (arreglo[i] > mayor) {
+        mayor = arreglo[i];
+      }
+    }
+
+    document.write(`El mayor valor ingresado es: ${mayor}`);
+    console.log(`El mayor valor ingresado es: ${mayor}`);
+
+  </script>
+
+</body>
+
+</html>
